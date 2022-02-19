@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>List</h2>
+<form>
+    <input placeholder="search by name" name="search" type="text"/>
+    <button>Search</button>
+</form>
+<a href="/pri/showCreate">Create</a>
+<div>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Reason</th>
+        </tr>
+        <tr th:each="alo : ${list}">
+            <td th:text="${alo.id}"></td>
+            <td th:text="${alo.name}"></td>
+            <td th:text="${alo.address}"></td>
+            <td th:text="${alo.reason}"></td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>

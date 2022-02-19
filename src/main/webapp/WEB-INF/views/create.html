@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Create</h2>
+<div>
+    <form method="post" action="/pri/createForm">
+        <table>
+            <tr>
+                <th>Name</th>
+                <td>
+                    <input name="name" type="text">
+                </td>
+            </tr>
+            <tr>
+                <th>Address</th>
+                <td>
+                    <input name="address" type="text">
+                </td>
+            </tr>
+            <tr>
+                <th>reason</th>
+                <td>
+                    <input name="reason" type="text">
+                </td>
+            </tr>
+        </table>
+        <button>Create</button>
+    </form>
+</div>
+</body>
+</html>
